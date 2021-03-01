@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImgShare</title>
+    <!-- BOOTSTRAP 4 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/58c05afc23.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                <img src="/public/img/imgshare-logo.png" alt="ImgShare">
+            </a>
+        </div>
+    </nav>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-8">
+                {{{ body }}}
+            </div>
+            <div class="col-md-4">
+                {{> stats}}
+                {{> popular}}
+                {{> comments}}
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white">
+        <div class="container p-2">
+            <div class="row">
+                <div class="mx-auto text-center">
+                    <p>ImgShare | &copy; Copyright 2021, All rights reserved.
+                    <blockquote class="blockquote-footer">by Camilo Araque</blockquote>
+                    </p>
+                    <p>
+                        <a href="https://github.com/AraqueGD" target="_blank">
+                            <i class="fab fa-github-square fa-2x"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="/public/js/scripts.js">
+
+    </script>
+</body>
+
+</html>
